@@ -4,7 +4,7 @@ import { Menu, X, Leaf, Phone } from 'lucide-react';
 import Services from './components/Services';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
-import AIChat from './components/AIChat';
+
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -50,8 +50,8 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
             {/* Logo */}
-            <div 
-              className="flex items-center cursor-pointer" 
+            <div
+              className="flex items-center cursor-pointer"
               onClick={(e) => handleNavClick(e as any, '#home')}
             >
               <Leaf className={`h-8 w-8 ${scrolled ? 'text-emerald-600' : 'text-white'} mr-2 transition-colors`} />
@@ -75,11 +75,10 @@ function App() {
               <a
                 href="#contact"
                 onClick={(e) => handleNavClick(e, '#contact')}
-                className={`px-5 py-2 rounded-full text-sm font-bold transition-all transform hover:scale-105 active:scale-95 ${
-                  scrolled 
-                    ? 'bg-emerald-600 text-white hover:bg-emerald-700 shadow-md' 
-                    : 'bg-white text-emerald-700 hover:bg-emerald-50'
-                }`}
+                className={`px-5 py-2 rounded-full text-sm font-bold transition-all transform hover:scale-105 active:scale-95 ${scrolled
+                  ? 'bg-emerald-600 text-white hover:bg-emerald-700 shadow-md'
+                  : 'bg-white text-emerald-700 hover:bg-emerald-50'
+                  }`}
               >
                 Get a Quote
               </a>
@@ -127,7 +126,7 @@ function App() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1592595896551-12b371d546d5?auto=format&fit=crop&q=80&w=1920" 
+            src="https://images.unsplash.com/photo-1592595896551-12b371d546d5?auto=format&fit=crop&q=80&w=1920"
             alt="Landscaping work in progress"
             className="w-full h-full object-cover"
             loading="eager"
@@ -197,7 +196,7 @@ function App() {
       <div id="services">
         <Services />
       </div>
-      
+
       <div id="gallery">
         <Gallery />
       </div>
@@ -205,9 +204,6 @@ function App() {
       <div id="contact">
         <Contact />
       </div>
-
-      {/* Hughes Landscaping AI Assistant */}
-      <AIChat />
 
       {/* Footer */}
       <footer className="bg-slate-950 text-slate-400 py-20 border-t border-slate-900">
@@ -283,5 +279,7 @@ const Mail = ({ className }: { className?: string }) => (
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
   </svg>
 );
+
+
 
 export default App;
