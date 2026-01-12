@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Leaf, Phone } from 'lucide-react';
+import { Menu, X, Leaf, Phone, Flame } from 'lucide-react';
 import Services from './components/Services';
 import Gallery from './components/Gallery';
 import Contact from './components/Contact';
@@ -54,9 +54,9 @@ function App() {
               className="flex items-center cursor-pointer"
               onClick={(e) => handleNavClick(e as any, '#home')}
             >
-              <Leaf className={`h-8 w-8 ${scrolled ? 'text-emerald-600' : 'text-white'} mr-2 transition-colors`} />
+              <Flame className={`h-8 w-8 ${scrolled ? 'text-emerald-600' : 'text-white'} mr-2 transition-colors`} />
               <span className={`text-xl font-bold tracking-tight ${scrolled ? 'text-slate-900' : 'text-white'} transition-colors`}>
-                Hughes Landscaping
+                Phoenix Landscaping
               </span>
             </div>
 
@@ -140,10 +140,10 @@ function App() {
             <span className="text-emerald-100 font-bold text-xs tracking-widest uppercase">Expert Landscaping • WA Owned</span>
           </div>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-8 leading-none tracking-tight">
-            Your Garden,<br /><span className="text-emerald-400">Perfected.</span>
+            Revive Your<br /><span className="text-emerald-400">Outdoor Space.</span>
           </h1>
           <p className="text-lg md:text-2xl text-slate-200 mb-12 max-w-2xl mx-auto font-medium leading-relaxed opacity-90">
-            One man, one vision. Professional, reliable landscaping and maintenance services tailored for the Western Australian climate.
+            Bring your garden back to life. Professional, reliable landscaping and maintenance services tailored for the Western Australian climate.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a
@@ -211,11 +211,11 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center text-white mb-6">
-                <Leaf className="h-8 w-8 text-emerald-500 mr-2" />
-                <span className="text-2xl font-black tracking-tight">Hughes Landscaping</span>
+                <Flame className="h-8 w-8 text-emerald-500 mr-2" />
+                <span className="text-2xl font-black tracking-tight">Phoenix Landscaping</span>
               </div>
               <p className="text-slate-400 max-w-sm text-lg leading-relaxed">
-                Transforming Western Australian gardens one project at a time. Professional landscaping and maintenance for those who value their outdoor living space.
+                Revitalizing Western Australian gardens one project at a time. Professional landscaping and maintenance for those who value their outdoor living space.
               </p>
             </div>
             <div>
@@ -234,20 +234,20 @@ function App() {
                   <div className="w-10 h-10 bg-slate-900 rounded-lg flex items-center justify-center mr-4 group-hover:bg-emerald-600 transition-colors">
                     <Phone className="w-5 h-5 text-white" />
                   </div>
-                  <span className="font-semibold text-slate-200">+61 400 123 456</span>
+                  <span className="font-semibold text-slate-200">0412 923 250</span>
                 </li>
                 <li className="flex items-center group cursor-pointer">
                   <div className="w-10 h-10 bg-slate-900 rounded-lg flex items-center justify-center mr-4 group-hover:bg-emerald-600 transition-colors">
                     <Mail className="w-5 h-5 text-white" />
                   </div>
-                  <span className="font-semibold text-slate-200">hello@hughes.com.au</span>
+                  <span className="font-semibold text-slate-200">phoenixhlandscaping@gmail.com</span>
                 </li>
               </ul>
             </div>
           </div>
           <div className="border-t border-slate-900 pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
             <p className="text-sm font-medium">
-              &copy; {new Date().getFullYear()} Hughes Landscaping. All rights reserved.
+              &copy; {new Date().getFullYear()} Phoenix Landscaping. All rights reserved.
             </p>
             <div className="flex gap-8 text-sm font-medium">
               <span className="hover:text-white cursor-pointer transition-colors">Privacy Policy</span>
